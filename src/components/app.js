@@ -1,13 +1,8 @@
 import React from 'react';
-import './app.css';
-import logo from './imgs/logo.svg';
 
 const App = () => (
     <div>
-        <div className="app">
-            <img src={logo} className="rotate"/>
-            <h1>Welcome to React!</h1>
-        </div>
+        <h1>MBoutique Home Page - Coming Soon!</h1>
     </div>
 );
 
