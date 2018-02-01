@@ -1,8 +1,13 @@
 import React from 'react';
+import Header from './header';
+import Welcome from './welcomeImage';
+import WelcomeInfo from './welcomeInfo';
 
 const App = () => (
-    <div>
-        <h1>MBoutique Home Page - Coming Soon!</h1>
+    <div className="container">
+        <Header />
+        <Welcome />
+        <WelcomeInfo />
     </div>
 );
 
