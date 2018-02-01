@@ -1,7 +1,7 @@
 import React from 'react';
 import macaronsImage from '../assets/images/macarons-image.png';
 
-const WelcomeInfo = () => {
+const Home = () => {
     return (
         <div className="welcomeInfoContainer">
             <img src={macaronsImage} id="macaronsimage" />
@@ -35,5 +35,5 @@ const WelcomeInfo = () => {
         </div>
     );
 }
-export default WelcomeInfo;
+export default Home;
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './header';
 import Welcome from './welcomeImage';
-import WelcomeInfo from './welcomeInfo';
+import Home from './welcomeInfo';
 
 const App = () => (
     <div className="container">
         <Header />
         <Welcome />
-        <WelcomeInfo />
+        <Home />
     </div>
 );
 
