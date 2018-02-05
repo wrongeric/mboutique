@@ -1,0 +1,43 @@
+.footer {
+    width: 100%;
+    height: 8%;
+    background-color: #df5277;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+.footer_contact li {
+    display: flex;
+    color: white;
+    /*padding: 12.5px 125px 0px 75px;*/
+}
+.footer_copyright {
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/*.followus_2 li {*/
+    /*display: flex;*/
+    /*color: white;*/
+    /*position: relative;*/
+    /*left: 750px;*/
+    /*bottom: 28px;*/
+    /*padding: 0 15px 0 0;*/
+/*}*/
+
+.footer_info {
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+.footerfollowus {
+    display: flex;
+}
+.twitter {
+    padding-left: 40px;
+}
