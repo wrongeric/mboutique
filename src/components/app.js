@@ -1,22 +1,18 @@
 import React from 'react';
-import Header from './header';
-import Welcome from './welcomeImage';
-import Home from './welcomeInfo';
-import Footer from './footer';
-import Calendar from './weeklycalendar';
+import HomePage from './home_page';
+import ContactPage from './contact_page';
+import {BrowserRouter as Router, Route, Navlink} from 'react-router-dom';
+
 
 const App = () => (
+    <Router>
     <div className="container">
-        <Header />
-        <Welcome />
-        <Home />
-            <br/>
-            <br/>
-        <Calendar />
-            <br/>
-            <br/>
-        <Footer />
+        <Route exact path="/" component={HomePage}></Route>
+        {/*<Route path="/our_macarons" component={OurMacarons}></Route>*/}
+        {/*<Route path="/gifts_parties" component={GiftsParties}></Route>*/}
+        <Route path="/contact_info" component={ContactPage}></Route>
     </div>
+    </Router>
 );
 
 export default App;
