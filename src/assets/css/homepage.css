@@ -67,10 +67,7 @@ li a:hover {
 }
 
 .welcomeContainer{
-    height: 400px;
-    background-image: url('../../components/welcome-image.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
 }
 
 .welcomeImage {

@@ -1,0 +1,78 @@
+.weeklyschedule {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    background-color: white;
+    justify-content: center;
+}
+
+.day {
+    width: 10%;
+    margin: 1% 2% 0% 2%;
+    display: inline-flex;
+    background-color: lightgoldenrodyellow;
+    flex-direction: column;
+    /*align-items: flex-start;*/
+
+
+}
+
+.dayTime {
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.time {
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+}
+
+.dayFont{
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+}
+
+.align-self{
+    align-self: flex-end;
+}
+.macaron {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    font-size: 12px;
+    align-self: flex-end;
+}
+.coconut {
+    background-color: #824603;
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
+}
+
+.vanilla {
+    background-color: #df5277;
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
+}
+
+.lemon {
+    background-color: #a2304e;
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
+}
+
+.almond {
+    background-color: #c39005;
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
+}
