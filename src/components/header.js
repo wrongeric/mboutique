@@ -13,7 +13,7 @@ const Header = () => {
                         <ul className="navmenu nav-tabs nav nav-item">
                             <li className="logoContainer"><img className='logo' src={Logo}></img></li>
                             <li><NavLink exact to={"/"} className='nav-link'>WELCOME</NavLink></li>
-                            <li><a>OUR MACARONS</a></li>
+                            <li><NavLink exact to={"/our-macarons"} className='nav-link'>OUR MACARONS</NavLink></li>
                             <li><a>GIFTS & PARTIES</a></li>
                             <li><NavLink to={"/contact_info"} className='nav-link'>CONTACT</NavLink></li>
                         </ul>
