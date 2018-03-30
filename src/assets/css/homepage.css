@@ -83,7 +83,7 @@ li a:hover {
     /*height: auto ;*/
 }
 
-.welcomeInfoContainer{
+.content-container{
     height: 60%;
     width: 90%;
     display: flex;
@@ -107,4 +107,21 @@ li a:hover {
 
 .welcomeInfo {
     float: right;
+}
+
+.our-macarons-text h2 {
+    padding-bottom: 5%;
+}
+
+.our-macarons-text p {
+    padding-bottom: 5%;
+}
+
+.our-macarons-image {
+    width: 100%;
+    background-image: url("../images/our-macarons-background.png");
+    background-repeat: no-repeat;
+    background-position: 70% 80%;
+    padding-bottom: 10%;
+    background-size: 100% auto;
 }
