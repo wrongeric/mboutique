@@ -7,16 +7,20 @@
 }
 
 .day {
-    width: 10%;
-    margin: 1% 2% 0% 2%;
+    width: 12%;
+    margin: 1% 1% 0% 1%;
     display: inline-flex;
     background-color: lightgoldenrodyellow;
     flex-direction: column;
+    justify-content: center;
     /*align-items: flex-start;*/
 
 
 }
-
+.day-div{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
 .dayTime {
     width: 100%;
     justify-content: space-between;
@@ -42,6 +46,8 @@
     align-self: flex-end;
 }
 .macaron {
+    padding-top: 5%;
+    padding-bottom: 5%;
     width: 100%;
     justify-content: space-between;
     flex-direction: row;

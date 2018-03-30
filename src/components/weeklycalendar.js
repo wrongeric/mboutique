@@ -20,9 +20,8 @@ const Calendar = () => {
         <div className="schedule">
             <div className="day">
                 <div>
-                    <p>Monday <br/><br/>
-                        15:00-16:00</p>
-                    <br/>
+                    <p className="day-div">Monday</p>
+                    <p className="day-div">15:00-16:00</p>
                 </div>
                 <div className="macaron">
                     <p>Chocolate</p>
@@ -37,10 +36,8 @@ const Calendar = () => {
 
             <div className="day">
                 <div>
-                    <p>Tuesday <br/><br/>
-                        14:00-15:00
-                    </p>
-                    <br/>
+                    <p className="day-div">Tuesday</p>
+                    <p className="day-div">14:00-15:00</p>
                 </div>
 
                 <div className="macaron">
@@ -57,10 +54,8 @@ const Calendar = () => {
 
             <div className="day">
                 <div>
-                    <p>Wednesday <br/><br/>
-                    09:00-10:00
-                    </p>
-                    <br/>
+                    <p className="day-div">Wednesday</p>
+                    <p className="day-div">09:00-10:00</p>
                 </div>
 
                 <div className="macaron">
@@ -76,8 +71,8 @@ const Calendar = () => {
 
             <div className="day">
                 <div>
-                    <p>Thursday <br/><br/>18:00-19:00</p>
-                    <br/>
+                    <p className="day-div">Thursday</p>
+                    <p className="day-div">18:00-19:00</p>
                 </div>
 
                 <div className="macaron">
@@ -94,8 +89,8 @@ const Calendar = () => {
             <div className="day">
 
                 <div>
-                    <p>Friday <br/><br/>11:00-12:00</p>
-                    <br/>
+                    <p className="day-div">Friday</p>
+                    <p className="day-div">11:00-12:00</p>
                 </div>
 
                 <div className="macaron">
@@ -111,23 +106,25 @@ const Calendar = () => {
 
             <div className="day">
                 <div>
-                    <p>Saturday <br/><br/> 18:00-19:00</p> <br/>
+                    <p className="day-div">Saturday</p>
+                    <p className="day-div">18:00-19:00</p>
                 </div>
 
                 <div className="macaron">
-                    <p>Rose</p>
+                    <p>Pink Rose</p>
                     <img src={rose} />
                 </div>
                 <br/>
                 <div className="macaron">
-                    <p>Blue</p>
+                    <p>Teal Blue</p>
                     <img src={tiffanyblue} />
                 </div>
             </div>
 
             <div className="day">
                 <div>
-                    <p>Sunday <br/><br/> 10:00-11:00</p> <br/>
+                    <p className="day-div">Sunday</p>
+                    <p className="day-div">10:00-11:00</p>
                 </div>
 
                 <div className="macaron">
