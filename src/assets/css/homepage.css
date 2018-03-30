@@ -125,3 +125,39 @@ li a:hover {
     padding-bottom: 10%;
     background-size: 100% auto;
 }
+
+/*Gifts and Parties Page*/
+.gifts-container {
+    height: 60%;
+    width: 90%;
+    display: block;
+    padding: 5% 0;
+}
+
+.gifts-container h2 {
+    padding-bottom: 5%;
+}
+
+.gifts-container p {
+    padding-bottom: 5%;
+}
+
+.gifts-background-image{
+    width: 100%;
+    background-image: url("../images/gifts-parties-background.png");
+    background-repeat: no-repeat;
+    background-position: 70% 80%;
+    padding-bottom: 20%;
+    background-size: 100% auto;
+}
+
+.gift-box {
+    padding-bottom: 5%;
+    margin-left: 5%;
+}
+
+.five-tiered {
+    padding-bottom: 1%;
+    width: 65%;
+    float: left;
+}
