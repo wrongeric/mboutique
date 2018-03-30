@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/css/homepage.css';
 import Header from './header';
 import HomePage from './home_page';
 import ContactPage from './contact_page';

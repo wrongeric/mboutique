@@ -3,7 +3,7 @@ import macaronsImage from '../assets/images/macarons-image.png';
 
 const Home = () => {
     return (
-        <div className="welcomeInfoContainer">
+        <div className="content-container">
             <img src={macaronsImage} id="macaronsimage" />
             <div className="welcomeInfo">
                 <h2>Welcome to MBoutique!</h2>
