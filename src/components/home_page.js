@@ -1,22 +1,16 @@
 import React from 'react';
 import Header from './header';
-import Welcome from './welcomeImage';
-import Home from './welcomeInfo';
+import WelcomeBanner from './welcomeBanner';
+import WelcomeInfo from './welcomeInfo';
 import Footer from './footer';
 import Calendar from './weeklycalendar';
 
 const HomePage = () => {
     return (
-        <div>
-            <Header/>
-            <Welcome/>
-            <Home/>
-            <br/>
-            <br/>
+        <div className="container">
+            <WelcomeBanner/>
+            <WelcomeInfo/>
             <Calendar/>
-            <br/>
-            <br/>
-            <Footer/>
         </div>
     )
 }

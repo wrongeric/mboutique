@@ -7,10 +7,8 @@ import ContactInfo from './contact_info';
 
 const ContactPage = () => (
     <div className="container">
-        <Header />
         <ContactImage />
         <ContactInfo />
-        <Footer />
     </div>
 );
 
