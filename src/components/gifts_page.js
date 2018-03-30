@@ -1,6 +1,6 @@
 import React from 'react';
-import GiftsBanner from './gifts-banner';
-import GiftsContent from './gifts-content';
+import GiftsBanner from './gifts_banner';
+import GiftsContent from './gifts_content';
 
 const GiftsPage = () => {
     return (

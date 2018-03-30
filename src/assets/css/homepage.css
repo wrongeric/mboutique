@@ -127,6 +127,12 @@ li a:hover {
 }
 
 /*Gifts and Parties Page*/
+.gifts-image-container {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+}
+
 .gifts-container {
     height: 60%;
     width: 90%;
