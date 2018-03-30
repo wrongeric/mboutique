@@ -5,7 +5,8 @@
 #root {
     height: 100%;
     width: 100%;
-    display: flex;
+    display: block;
+    box-sizing: border-box;
 }
 .container {
     width: 100%;
@@ -20,6 +21,7 @@
     position: relative;
     background: #fffabe url('../images/logo.png') no-repeat 7% 50%;
     width: 100%;
+    max-width: 1000px;
     height: 72px;
 }
 
@@ -69,21 +71,23 @@ li a:hover {
 }
 
 .welcomeContainer{
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     height: 400px;
 }
 
-.welcomeImage {
-    width: auto ;
-    max-width: 100% ;
-    height: auto ;
+.welcomeContainer .welcomeImage {
+    width: 100%;
+    /*width: auto ;*/
+    /*max-width: 100% ;*/
+    /*height: auto ;*/
 }
 
 .welcomeInfoContainer{
     height: 60%;
     width: 90%;
     display: flex;
-    padding: 4% 0;
+    padding: 5% 0;
 }
 
 .welcomeInfo h2 {
@@ -98,6 +102,7 @@ li a:hover {
     float: left;
     height: 30%;
     padding-right: 5%;
+    padding-top: 10%;
 }
 
 .welcomeInfo {

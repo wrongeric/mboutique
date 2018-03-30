@@ -8,18 +8,26 @@
     margin-right: .5%;
 }
 
+.schedule .day {
+    text-align: start;
+}
 .day {
     width: 11%;
-    margin: 1% 1% 0% 2%;
+    margin: 1% 1% 0% 0%;
     display: inline-flex;
     background-color: lightgoldenrodyellow;
     flex-direction: column;
+
     /*justify-content: center;*/
     /*align-items: flex-start;*/
 }
-.day-div{
+.day-div, .time-dev{
     padding-top: 10%;
     padding-bottom: 10%;
+}
+
+.day-div{
+    font-size: 20px;
 }
 .dayTime {
     width: 100%;
@@ -46,13 +54,13 @@
     align-self: flex-end;
 }
 .macaron {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 8%;
+    padding-bottom: 8%;
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
     display: flex;
-    font-size: 12px;
+    font-size: 14px;
     align-self: flex-end;
 }
 .coconut {
@@ -82,3 +90,6 @@
     display: flex;
     color: whitesmoke;
 }
+
+
+/*Add Media Query min width 748px*/
