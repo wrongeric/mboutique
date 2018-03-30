@@ -133,18 +133,18 @@ li a:hover {
     height: 400px;
 }
 
-.gifts-container {
+.gift-container {
     height: 60%;
     width: 90%;
     display: block;
     padding: 5% 0;
 }
 
-.gifts-container h2 {
+.gift-container h2 {
     padding-bottom: 5%;
 }
 
-.gifts-container p {
+.gift-container p {
     padding-bottom: 5%;
 }
 
