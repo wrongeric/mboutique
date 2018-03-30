@@ -1,21 +1,21 @@
-.weeklyschedule {
+.schedule {
     width: 100%;
     display: flex;
     align-content: center;
     background-color: white;
     justify-content: center;
+    padding-bottom: 5%;
+    margin-right: .5%;
 }
 
 .day {
     width: 11%;
-    margin: 1% 1% 0% 1%;
+    margin: 1% 1% 0% 2%;
     display: inline-flex;
     background-color: lightgoldenrodyellow;
     flex-direction: column;
     /*justify-content: center;*/
     /*align-items: flex-start;*/
-
-
 }
 .day-div{
     padding-top: 10%;

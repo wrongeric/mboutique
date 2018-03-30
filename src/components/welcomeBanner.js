@@ -1,7 +1,7 @@
 import React from 'react';
 import welcomeImage from './welcome-image.png';
 
-const Welcome = () => {
+const WelcomeBanner = () => {
     return (
         <div className="welcomeContainer">
             <img className={welcomeImage} src={welcomeImage} />
@@ -9,4 +9,4 @@ const Welcome = () => {
     )
 }
 
-export default Welcome
+export default WelcomeBanner

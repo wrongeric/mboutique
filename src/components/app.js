@@ -1,7 +1,9 @@
 import React from 'react';
+import Header from './header';
 import HomePage from './home_page';
 import ContactPage from './contact_page';
 import OurMacarons from './our-macarons';
+import Footer from './footer';
 import {BrowserRouter as Router, Route, Navlink} from 'react-router-dom';
 
 
