@@ -7,16 +7,10 @@ import Calendar from './weeklycalendar';
 
 const HomePage = () => {
     return (
-        <div>
-            <Header/>
+        <div className="container">
             <Welcome/>
             <Home/>
-            <br/>
-            <br/>
             <Calendar/>
-            <br/>
-            <br/>
-            <Footer/>
         </div>
     )
 }

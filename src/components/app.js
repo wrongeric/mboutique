@@ -6,14 +6,14 @@ import {BrowserRouter as Router, Route, Navlink} from 'react-router-dom';
 
 
 const App = () => (
-    <Router>
     <div className="container">
+        <Header />
         <Route exact path="/" component={HomePage}></Route>
         <Route path="/our-macarons" component={OurMacarons}></Route>
         {/*<Route path="/gifts_parties" component={GiftsParties}></Route>*/}
         <Route path="/contact_info" component={ContactPage}></Route>
+        <Footer />
     </div>
-    </Router>
 );
 
 export default App;

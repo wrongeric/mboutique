@@ -4,9 +4,9 @@ import macaronsImage from '../assets/images/macarons-image.png';
 const Home = () => {
     return (
         <div className="welcomeInfoContainer">
-            <img src={macaronsImage} id="macaronsimage" />
-            <br/>
-            <br/>
+            {/*<img src={macaronsImage} id="macaronsimage" />*/}
+            {/*<br/>*/}
+            {/*<br/>*/}
             <div className="welcomeInfo">
                 <h1>Welcome to MBoutique!</h1>
                 <p>We're a home-based baking business that specializes in the making of French macarons, a gluten-free pastry item made from ground almonds.

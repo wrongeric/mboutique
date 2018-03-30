@@ -6,7 +6,8 @@ import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
 import App from './components/app';
 
 ReactDOM.render(
-
-    <App />,
+    <Router>
+        <App />,
+    </Router>,
     document.getElementById('root')
 );
