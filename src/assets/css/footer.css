@@ -1,43 +1,56 @@
-.footer {
+footer {
     width: 100%;
-    height: 8%;
     background-color: #df5277;
-    display: flex;
-    align-content: space-around;
-    flex-direction: column;
+    display: block;
+    color: white;
 }
 
-.footer_contact li {
-    display: flex;
-    color: white;
-    /*padding: 12.5px 125px 0px 75px;*/
+.footer-container {
+    width: 100%;
+    text-align: center;
 }
+
+.footer_email, .footer_phone_number, .footer_follow_us {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    font-size: 1.4em;
+}
+
+.footer_follow_us img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .footer_copyright {
     color: white;
     text-align: center;
     box-sizing: border-box;
+    font-size: 1.2em;
 }
-
-/*.followus_2 li {*/
-    /*display: flex;*/
-    /*color: white;*/
-    /*position: relative;*/
-    /*left: 750px;*/
-    /*bottom: 28px;*/
-    /*padding: 0 15px 0 0;*/
-/*}*/
 
 .footer_info {
     list-style-type: none;
     display: flex;
     height: 100%;
     width: 100%;
-
 }
 
-.footerfollowus {
-    display: flex;
-}
-.twitter {
-    padding-left: 40px;
+@media screen and (min-width: 200px) and (max-width: 599px) {
+    .footer_email, .footer_phone_number {
+        width: 45%;
+        font-size: .85em;
+    }
+
+    .footer_follow_us{
+        width: 100%;
+        font-size: .85em;
+    }
+
+    .footer_copyright {
+        font-size: .70em;
+    }
 }

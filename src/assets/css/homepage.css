@@ -1,21 +1,18 @@
 * {
     margin: 0 auto;
     padding: 0;
-}
-#root {
-    height: 100%;
-    width: 100%;
-    display: block;
     box-sizing: border-box;
 }
+/*#root {*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*display: block;*/
+    /**/
+/*}*/
 .container {
     width: 100%;
     max-width: 1000px;
-    margin: auto;
 }
-/*body {*/
-    /*margin: 0;*/
-/*}*/
 
 .header {
     position: relative;
@@ -25,37 +22,19 @@
     height: 72px;
 }
 
-.nav-bar {
+.navigation {
     position: absolute;
     right: 0;
     margin: 0;
     padding: 5px 0;
 }
-
-.navmenu {
-    display: inline-flex;
-    list-style-type: none;
-    width: 100%;
-    justify-content: space-between;
+.navigation .nav-list {
+    padding: 0;
+    margin: 0;
 }
-
-.navmenu li {
-    font-family: Ariel, Helvetica, sans-serif;
-    font-size: 2vmin;
-    padding-top: 1%;
-
-}
-
-.navmenu li a {
-    color: #515151;
-    /*position: relative;*/
-    /*display: inline-block;*/
-    /*margin-left: 20px;*/
-    /*left: -200px;*/
-}
-
-.nav-item{
+.nav-item {
     padding: 22px;
+    display: inline-block;
 }
 
 li a:hover {
@@ -78,9 +57,6 @@ li a:hover {
 
 .welcomeContainer .welcomeImage {
     width: 100%;
-    /*width: auto ;*/
-    /*max-width: 100% ;*/
-    /*height: auto ;*/
 }
 
 .content-container{
@@ -96,6 +72,7 @@ li a:hover {
 
 .welcomeInfo p {
     padding-bottom: 5%;
+    font-size: 1.1em;
 }
 
 #macaronsimage {
@@ -107,6 +84,97 @@ li a:hover {
 
 .welcomeInfo {
     float: right;
+}
+
+.schedule {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    background-color: white;
+    justify-content: center;
+    padding-bottom: 5%;
+    margin-right: .5%;
+}
+
+.schedule .day {
+    text-align: start;
+}
+.day {
+    width: 11%;
+    margin: 1% 1% 0% 0%;
+    display: inline-flex;
+    background-color: lightgoldenrodyellow;
+    flex-direction: column;
+}
+
+.day-div, .time-dev{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.day-div{
+    font-size: 18px;
+}
+.dayTime {
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.time {
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+}
+
+.dayFont{
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+}
+
+.align-self{
+    align-self: flex-end;
+}
+.macaron {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    font-size: 14px;
+    align-self: flex-end;
+}
+.coconut {
+    background-color: #824603;
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
+}
+
+.vanilla {
+    background-color: #df5277;
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
+}
+
+.lemon {
+    background-color: #a2304e;
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
+}
+
+.almond {
+    background-color: #c39005;
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
 }
 
 .our-macarons-text h2 {
@@ -166,4 +234,116 @@ li a:hover {
     padding-bottom: 1%;
     width: 65%;
     float: left;
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .header {
+        position: relative;
+        background: #fffabe url(../images/logo.png) no-repeat 50% 30%;
+        width: 100%;
+    }
+
+    .navigation {
+        position: relative;
+        padding: 29px 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    .nav-item {
+        display: inline-block;
+        padding: 3% 2%;
+    }
+
+    #macaronsimage {
+        display: none;
+    }
+
+    .welcomeContainer{
+        width: 100%;
+        max-width: 1000px;
+        height: 250px;
+    }
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+    .header {
+        position: relative;
+        background: #fffabe url(../images/logo.png) no-repeat 50% 30%;
+        width: 100%;
+    }
+
+    .navigation {
+        position: relative;
+        padding: 29px 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size: 3.25vmin;
+        text-decoration: none;
+    }
+
+    .nav-item {
+        display: inline-block;
+        padding: 4% 1%;
+    }
+
+    #macaronsimage {
+        display: none;
+    }
+
+    .welcomeContainer{
+        width: 100%;
+        max-width: 1000px;
+        height: 150px;
+    }
+
+    .nav-menu li {
+        font-size: 3vmin;
+    }
+
+    .navmenu {
+        display: inline-flex;
+        list-style-type: none;
+        width: 100%;
+    }
+
+    .our-macarons-image{
+        background-image: none;
+    }
+
+    .our-macarons-image ul {
+        padding-left: 15%;
+    }
+
+    .content-container{
+        width: 75%;
+    }
+
+    .gifts-image-container {
+        width: 100%;
+        max-width: 1000px;
+        height: 150px;
+    }
+
+    .giftsImage{
+        width: 100%;
+    }
+
+    .gifts-background-image{
+        background-image: none;
+    }
+
+    .gift-container {
+        padding: 2% 0 20% 0;
+        font-size: .85em;
+    }
+
+    .five-tiered {
+        padding-bottom: 0%;
+        width: 100%;
+    }
 }

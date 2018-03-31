@@ -8,19 +8,14 @@ import '../assets/css/footer.css';
 
 const Footer = () => {
     return (
-        <div className="footer">
-            <br />
-            <ul className="footer_info">
-
-                <li className="footer_email">order@mboutique.com<img src={mail} /></li>
-
-                <li className="footer_phone_number"> 949.800-3111 <img src={phone} /></li>
-
-                <li className="footerfollowus">Follow us<img src={facebook} class="facebook" /><img src={twitter} class="twitter" /></li>
-            </ul>
-            <br />
+        <footer>
+            <div className="footer-container">
+                <div className="footer_email"><img src={mail} />order@mboutique.com</div>
+                <div className="footer_phone_number"> <img src={phone} />949.800-3111</div>
+                <div className="footer_follow_us">Follow us<img src={facebook} class="facebook" /><img src={twitter} class="twitter" /></div>
+            </div>
             <p className="footer_copyright">Copyright @ 2014 MBoutique. All rights reserved.</p>
-        </div>
+        </footer>
     )
 }
 
