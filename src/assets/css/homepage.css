@@ -56,7 +56,8 @@ li a:hover {
 }
 
 .welcomeContainer .welcomeImage {
-    width: 100%;
+    max-width:100%;
+    max-height:100%;
 }
 
 .content-container{
@@ -201,6 +202,11 @@ li a:hover {
     height: 400px;
 }
 
+.giftsImage {
+    max-width:100%;
+    max-height:100%;
+}
+
 .gift-container {
     height: 60%;
     width: 90%;
@@ -236,6 +242,167 @@ li a:hover {
     float: left;
 }
 
+.contactInfoContainer{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.contactInfo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contactFormContainer {
+    width: 40%;
+    display: flex;
+    margin-right: 5%;
+}
+
+.contactInfoImage {
+    width: 40%;
+}
+
+.contactInfoImage img {
+    padding-top: 14%;
+}
+
+.visitUs{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #6a6969;
+    margin-bottom: 5%;
+}
+
+.visitUsInfo {
+    font-size: 1.25em;
+}
+
+.holiday {
+    margin-bottom: 10%;
+}
+
+.contactImageContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+}
+
+.contactImage {
+    max-width:100%;
+    max-height:100%;
+}
+
+.orderLink {
+    color: deeppink;
+}
+
+.order-div {
+    margin-bottom: 10%;
+}
+
+.contactFormHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #6a6969;
+    margin-bottom: 5%;
+}
+
+input {
+    height: 35px;
+    width: 310px;
+    background-color: #f5f5f5;
+    border: none;
+    margin-bottom: 2%;
+    font-size: 1em;
+}
+
+.textArea {
+    height: 105px;
+    width: 310px;
+    background-color: #f5f5f5;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1.25em;
+}
+
+footer {
+    width: 100%;
+    background-color: #df5277;
+    display: block;
+    color: white;
+}
+
+.footer-container {
+    width: 100%;
+    text-align: center;
+}
+
+.footer_email, .footer_phone_number, .footer_follow_us {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    font-size: 1.4em;
+}
+
+.footer_follow_us img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer_copyright {
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+.footer_info {
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+    .visitUs, .contactFormHeader {
+        font-size: 2em;
+    }
+
+    .visitUs p {
+        font-size: 2em;
+    }
+
+    .contactInfoImage {
+        display: none;
+    }
+
+    .contactInfo {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .contactInfoContainer {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .contactImageContainer {
+        height: 30%;
+    }
+}
+
 @media screen and (min-width: 600px) and (max-width: 767px) {
     .header {
         position: relative;
@@ -265,9 +432,79 @@ li a:hover {
         height: 250px;
     }
 
+    .visitUs, .contactFormHeader {
+        font-size: 2em;
+    }
+
+    .visitUs p {
+        font-size: 2em;
+    }
+
+    .contactInfoImage {
+        display: none;
+    }
+
+    .contactInfo {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .contactInfoContainer {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .contactImageContainer {
+        height: 30%;
+    }
+    .contactFormContainer {
+        width: 45%;
+        display: flex;
+        margin-right: 2%;
+    }
+
+    input {
+        height: 35px;
+        width: 265px;
+        background-color: #f5f5f5;
+        border: none;
+        margin-bottom: 2%;
+        font-size: .9em;
+    }
+
+    .textArea {
+        height: 105px;
+        width: 265px;
+        background-color: #f5f5f5;
+        border: none;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+
+    .visitUsInfo {
+        font-size: 1em;
+    }
+
+    .footer_email, .footer_phone_number {
+        width: 45%;
+        font-size: 1.1em;
+        padding-top: 1%;
+        padding-bottom: .5%
+    }
+
+    .footer_follow_us {
+        font-size: 1.1em;
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 1%;
+    }
+
+    .footer_copyright {
+        font-size: 1em;
+    }
 }
 
-@media screen and (min-width: 200px) and (max-width: 599px) {
+@media screen and (min-width: 475px) and (max-width: 599px) {
     .header {
         position: relative;
         background: #fffabe url(../images/logo.png) no-repeat 50% 30%;
@@ -329,10 +566,6 @@ li a:hover {
         height: 150px;
     }
 
-    .giftsImage{
-        width: 100%;
-    }
-
     .gifts-background-image{
         background-image: none;
     }
@@ -345,5 +578,263 @@ li a:hover {
     .five-tiered {
         padding-bottom: 0%;
         width: 100%;
+    }
+
+    .visitUs, .contactFormHeader {
+        font-size: 2em;
+        margin-bottom: 10%;
+    }
+
+    .visitUs p {
+        font-size: 2em;
+    }
+
+    .visitUsInfo div {
+        padding-bottom: 2%;
+    }
+    .contactInfoImage {
+        display: none;
+    }
+
+    .order-div div {
+        padding-bottom: 2%;
+    }
+    .contactInfo {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 50%;
+    }
+
+    .contactInfoContainer {
+        margin-bottom: 15%;
+        margin-top: 5%;
+    }
+
+    .contactImageContainer {
+        height: 30%;
+    }
+    .contactFormContainer {
+        width: 50%;
+        display: flex;
+        margin-right: 2%;
+    }
+
+    input {
+        height: 35px;
+        width: 220px;
+        background-color: #f5f5f5;
+        border: none;
+        margin-bottom: 5%;
+        font-size: .75em;
+    }
+
+    .textArea {
+        height: 105px;
+        width: 220px;
+        background-color: #f5f5f5;
+        border: none;
+        margin-bottom: 10px;
+        font-size: .9em;
+    }
+
+    .visitUsInfo {
+        font-size: 1em;
+    }
+
+    .footer_email, .footer_phone_number {
+        width: 45%;
+        font-size: 1.1em;
+        padding-top: 1%;
+        padding-bottom: .5%
+    }
+
+    .footer_follow_us {
+        font-size: 1.1em;
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 1%;
+    }
+
+    .footer_copyright {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 200px) {
+    .header {
+        position: relative;
+        background: #fffabe url(../images/logo.png) no-repeat 50% 30%;
+        width: 100%;
+    }
+
+    .navigation {
+        position: relative;
+        padding: 29px 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size: 3.25vmin;
+        text-decoration: none;
+    }
+
+    .nav-item {
+        display: inline-block;
+        padding: 4% 1%;
+    }
+
+    #macaronsimage {
+        display: none;
+    }
+
+    .welcomeContainer {
+        width: 100%;
+        max-width: 1000px;
+        height: 150px;
+    }
+
+    .nav-menu li {
+        font-size: 3vmin;
+    }
+
+    .navmenu {
+        display: inline-flex;
+        list-style-type: none;
+        width: 100%;
+    }
+
+    .our-macarons-image {
+        background-image: none;
+    }
+
+    .our-macarons-image ul {
+        padding-left: 15%;
+    }
+
+    .our-macarons-text p {
+        font-size: 1.1em;
+    }
+
+    .our-macarons-image li {
+        font-size: 1.1em;
+    }
+
+    .content-container {
+        width: 75%;
+    }
+
+    .gifts-image-container {
+        width: 100%;
+        max-width: 1000px;
+        height: 150px;
+    }
+
+    .gifts-background-image {
+        background-image: none;
+    }
+
+    .gift-container {
+        padding: 5% 0 20% 0;
+        font-size: .85em;
+        width: 75%;
+    }
+
+    .gift-container h2 {
+        font-size: 2em;
+    }
+
+    .five-tiered {
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .visitUs, .contactFormHeader {
+        font-size: 2em;
+        margin-bottom: 10%;
+    }
+
+    .visitUs p {
+        font-size: 2em;
+    }
+
+    .visitUsInfo div {
+        padding-bottom: 2%;
+    }
+
+    .contactInfoImage {
+        display: none;
+    }
+
+    .order-div div {
+        padding-bottom: 2%;
+    }
+
+    .contactInfo {
+        width: 100%;
+    }
+
+    .contactInfoContainer {
+        margin-bottom: 15%;
+        margin-top: 5%;
+        display: block;
+        text-align: center;
+    }
+
+    .contactImageContainer {
+        height: 30%;
+    }
+
+    .contactFormContainer {
+        width: 90%;
+        display: flex;
+        margin-top: 5%;
+    }
+
+    input {
+        height: 35px;
+        width: 90%;
+        background-color: #f5f5f5;
+        border: none;
+        margin-bottom: 5%;
+        font-size: .75em;
+    }
+
+    .textArea {
+        height: 105px;
+        width: 90%;
+        background-color: #f5f5f5;
+        border: none;
+        margin-bottom: 10px;
+        font-size: .9em;
+    }
+
+    .visitUsInfo {
+        font-size: 1em;
+    }
+
+    .form-button {
+        width: 25%;
+        height: 30%;
+        font-size: 2em;
+        background-color: #fffabe;
+    }
+
+    .footer_email, .footer_phone_number {
+        width: 45%;
+        font-size: .8em;
+        padding-top: 1%;
+        padding-bottom: .5%
+    }
+
+    .footer_follow_us {
+        font-size: .8em;
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 1%;
+    }
+
+    .footer_copyright {
+        font-size: .75em;
     }
 }

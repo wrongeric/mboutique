@@ -42,32 +42,20 @@ class ContactInfo extends Component {
             <div className="contactInfoContainer">
                 <div className="contactInfo">
                     <p className="visitUs">Visit Us</p>
-                    <p>
-                        Monday - Friday } 10am - 9pm
-                        <br/>
-                        Saturday | 10am - 8pm
-                        <br/>
-                        Sunday | 11am -7pm
-                        <br/>
-                        Closed Thanksgiving Day,
-                        <br/>
-                        Christmas Day, and Easter
-                        <br/>
-                        <br/>
-                        1625 Post st
-                        <br/>
-                        San Francisco, CA 94115
-                        <br/>
-                        <br/>
-                        949 800-3111
-                        <br/>
-                        <a className="orderLink">order@mboutique.com</a>
-                        <br/>
-                        <br/>
-                        Send your questions, comments and flavor
-                        <br/>
-                        suggestions or place an order!;
-                    </p>
+                    <div className="visitUsInfo">
+                        <div>Monday - Friday | 10am - 9pm</div>
+                        <div>Saturday | 10am - 8pm</div>
+                        <div>Sunday | 11am -7pm</div>
+                        <div>Closed Thanksgiving Day,</div>
+                        <div className="holiday">Christmas Day, and Easter</div>
+                        <div>1625 Post St.</div>
+                        <div>San Francisco, CA 94115</div>
+                        <div>949 800-3111</div>
+                        <div className="order-div">
+                            <a className="orderLink">order@mboutique.com</a>
+                        </div>
+                    <div>Send your questions, comments and flavor suggestions or place an order!</div>
+                    </div>
                 </div>
                 <div className="contactFormContainer">
 
@@ -79,7 +67,7 @@ class ContactInfo extends Component {
                         <input name="subject" label="Subject" type="text" placeholder="Subject" onChange={this.handleInputChange} value={subject}  />
                         <textarea className="textArea" name="message" label="Message" type="text" placeholder="Message" onChange={this.handleInputChange} value={message}  />
                         <div className='col-xs-3'>
-                            <button type='button' className={'btn-danger margin-left'} onClick={this.handleSubmit}>Send</button>
+                            <button type='button' className={'margin-left form-button'} onClick={this.handleSubmit}>Send</button>
                         </div>
                     </form>
 
