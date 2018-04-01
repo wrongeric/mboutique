@@ -660,7 +660,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 200px) {
+@media screen and (min-width: 200px) and (max-width: 474px) {
     .header {
         position: relative;
         background: #fffabe url(../images/logo.png) no-repeat 50% 30%;
