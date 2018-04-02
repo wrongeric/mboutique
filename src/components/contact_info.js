@@ -54,7 +54,9 @@ class ContactInfo extends Component {
                         <div className="order-div">
                             <a className="orderLink">order@mboutique.com</a>
                         </div>
-                    <div>Send your questions, comments and flavor suggestions or place an order!</div>
+                    </div>
+                    <div className="send-questions">
+                        <p>Send your questions, comments and flavor suggestions or place an order! </p>
                     </div>
                 </div>
                 <div className="contactFormContainer">

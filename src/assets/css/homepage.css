@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Ariel, Helvetica, sans-serif;
+}
 /*#root {*/
     /*height: 100%;*/
     /*width: 100%;*/
@@ -220,6 +224,10 @@ li a:hover {
 
 .gift-container p {
     padding-bottom: 5%;
+}
+
+.gift-container a {
+    color: deeppink;
 }
 
 .gifts-background-image{
@@ -744,6 +752,10 @@ footer {
         font-size: 2em;
     }
 
+    .gift-container p {
+        font-size: 1.1em;
+    }
+
     .five-tiered {
         padding-bottom: 0;
         width: 100%;
@@ -779,6 +791,10 @@ footer {
         margin-top: 5%;
         display: block;
         text-align: center;
+    }
+
+    .send-questions {
+        width: 80%;
     }
 
     .contactImageContainer {
