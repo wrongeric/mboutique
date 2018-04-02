@@ -60,8 +60,9 @@ li a:hover {
 }
 
 .welcomeContainer .welcomeImage {
-    max-width:100%;
-    max-height:100%;
+    width: 100%;
+    /*max-width:100%;*/
+    /*max-height:100%;*/
 }
 
 .content-container{
@@ -207,8 +208,9 @@ li a:hover {
 }
 
 .giftsImage {
-    max-width:100%;
-    max-height:100%;
+    width: 100%;
+    /*max-width:100%;*/
+    /*max-height:100%;*/
 }
 
 .gift-container {
@@ -304,8 +306,9 @@ li a:hover {
 }
 
 .contactImage {
-    max-width:100%;
-    max-height:100%;
+    width: 100%;
+    /*max-width:100%;*/
+    /*max-height:100%;*/
 }
 
 .orderLink {
@@ -543,7 +546,7 @@ footer {
     .welcomeContainer{
         width: 100%;
         max-width: 1000px;
-        height: 150px;
+        height: 250px;
     }
 
     .nav-menu li {
@@ -571,7 +574,7 @@ footer {
     .gifts-image-container {
         width: 100%;
         max-width: 1000px;
-        height: 150px;
+        height: 250px;
     }
 
     .gifts-background-image{
@@ -699,7 +702,7 @@ footer {
     .welcomeContainer {
         width: 100%;
         max-width: 1000px;
-        height: 150px;
+        height: 200px;
     }
 
     .nav-menu li {
@@ -735,7 +738,7 @@ footer {
     .gifts-image-container {
         width: 100%;
         max-width: 1000px;
-        height: 150px;
+        height: 200px;
     }
 
     .gifts-background-image {
