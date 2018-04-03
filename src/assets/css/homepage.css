@@ -113,14 +113,19 @@ li a:hover {
     flex-direction: column;
     position: relative;
 }
-
-.day-div, .time-dev{
-    padding-top: 10%;
-    padding-bottom: 10%;
+.time-div {
+    text-align: center;
+    padding-top: 5%;
 }
+/*.day-div, .time-div{*/
+    /*padding-top: 10%;*/
+    /*padding-bottom: 10%;*/
+/*}*/
 
 .day-div{
     font-size: 18px;
+    padding-top: 5%;
+    text-align: center;
 }
 .dayTime {
     width: 100%;
@@ -147,9 +152,6 @@ li a:hover {
     align-self: flex-end;
 }
 
-.bottom-macaron-image{
-    margin-right: 5%;
-}
 .macaron {
     padding-top: 8%;
     padding-bottom: 8%;
@@ -266,8 +268,8 @@ li a:hover {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 2%;
-    margin-bottom: 5%;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 .contactInfo {
@@ -335,6 +337,10 @@ li a:hover {
     margin-bottom: 5%;
 }
 
+.send-questions {
+    margin-left: 6%;
+}
+
 input {
     height: 35px;
     width: 310px;
@@ -396,6 +402,18 @@ footer {
 
 
 @media screen and (min-width: 767px) and (max-width: 1000px) {
+    .day-div {
+        font-size: 16px;
+    }
+
+    .time-div {
+        font-size: 14px;
+    }
+
+    .macaron {
+        font-size: 12px;
+    }
+
     .visitUs, .contactFormHeader {
         font-size: 2em;
     }
@@ -411,11 +429,12 @@ footer {
     .contactInfo {
         margin-left: 2%;
         margin-right: 2%;
+        text-align: center;
     }
 
     .contactInfoContainer {
-        margin-bottom: 5%;
-        margin-top: 5%;
+        margin-bottom: 19%;
+        margin-top: 8%;
     }
 
     .contactImageContainer {
@@ -449,7 +468,33 @@ footer {
     .welcomeContainer{
         width: 100%;
         max-width: 1000px;
-        height: 250px;
+        height: 275px;
+    }
+
+    .day {
+        width: 13%;
+    }
+
+    .day-div {
+        font-size: 14px;
+    }
+
+    .time-div {
+        font-size: 14px;
+    }
+
+    .macaron {
+        font-size: 12px;
+    }
+
+    .gifts-image-container {
+        width: 100%;
+        max-width: 1000px;
+        height: 275px;
+    }
+
+    .gift-container {
+        margin-bottom: 3%;
     }
 
     .visitUs, .contactFormHeader {
@@ -470,8 +515,8 @@ footer {
     }
 
     .contactInfoContainer {
-        margin-bottom: 5%;
-        margin-top: 5%;
+        margin-bottom: 15%;
+        margin-top: 10%;
     }
 
     .contactImageContainer {
@@ -555,7 +600,7 @@ footer {
     .welcomeContainer{
         width: 100%;
         max-width: 1000px;
-        height: 250px;
+        height: 225px;
     }
 
     .nav-menu li {
@@ -566,6 +611,18 @@ footer {
         display: inline-flex;
         list-style-type: none;
         width: 100%;
+    }
+
+    .schedule {
+        flex-wrap: wrap;
+    }
+
+    .day {
+        width: 30%;
+    }
+
+    .almond {
+        position: relative;
     }
 
     .our-macarons-image{
@@ -583,7 +640,7 @@ footer {
     .gifts-image-container {
         width: 100%;
         max-width: 1000px;
-        height: 250px;
+        height: 225px;
     }
 
     .gifts-background-image{
@@ -711,7 +768,11 @@ footer {
     .welcomeContainer {
         width: 100%;
         max-width: 1000px;
-        height: 200px;
+        height: 180px;
+    }
+
+    .welcomeInfo h2 {
+        font-size: 1.25em;
     }
 
     .nav-menu li {
@@ -722,6 +783,39 @@ footer {
         display: inline-flex;
         list-style-type: none;
         width: 100%;
+    }
+
+    .schedule {
+        flex-wrap: wrap;
+    }
+
+    .day {
+        width: 50%;
+        margin-bottom: 5%;
+    }
+
+    .almond, .vanilla, .coconut, .lemon {
+        position: relative;
+        padding-bottom: 4%;
+    }
+
+    .macaron {
+        padding-top: 3%;
+        padding-bottom: 4%;
+    }
+
+    /*.macaron img {*/
+        /*float: right;*/
+        /*padding-right: 5%;*/
+    /*}*/
+
+    .macaron p {
+        float: left;
+    }
+
+    .macaron img {
+        position: absolute;
+        right: 10%;
     }
 
     .our-macarons-image {
@@ -747,7 +841,7 @@ footer {
     .gifts-image-container {
         width: 100%;
         max-width: 1000px;
-        height: 200px;
+        height: 180px;
     }
 
     .gifts-background-image {
@@ -864,5 +958,35 @@ footer {
 
     .footer_copyright {
         font-size: .75em;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 344px) {
+    .welcomeContainer{
+        width: 100%;
+        max-width: 1000px;
+        height: 135px;
+    }
+
+    .day {
+        width: 70%;
+    }
+
+    .gifts-image-container {
+        width: 100%;
+        max-width: 1000px;
+        height: 135px;
+    }
+
+    .footer_email, .footer_phone_number, .footer_follow_us {
+        font-size: .8em;
+    }
+
+    .footer_email, .footer_phone_number {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+
     }
 }

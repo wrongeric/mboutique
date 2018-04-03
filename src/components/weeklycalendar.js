@@ -24,72 +24,79 @@ class weeklyCalendar extends Component {
             {
                 id: "monday",
                 day: "Monday",
-                hours: "15:00-16:00",
-                macaron1: "chocoate",
+                hours: "3pm-4pm",
+                macaron1: "chocolate",
                 macImage1: chocolate,
                 macaron2: "coconut",
                 macImage2: coconut,
-                class: "coconut macaron"
+                class1: "macaron",
+                class2: "coconut macaron"
             },
             {
                 id: "tuesday",
                 day: "Tuesday",
-                hours: "14:00-15:00",
+                hours: "2pm-3pm",
                 macaron1: "ice cream",
                 macImage1: violetcassis,
                 macaron2: "Tea Latte",
                 macImage2: greentea,
-                class: "teaLatte macaron"
+                class1: "macaron",
+                class2: "teaLatte macaron"
             },
             {
                 id: "wednesday",
                 day: "Wednesday",
-                hours: "15:00-16:00",
+                hours: "3pm-4pm",
                 macaron1: "passion",
                 macImage1: passionfruit,
                 macaron2: "vanilla",
                 macImage2: vanilla,
-                class: "vanilla macaron",
+                class1: "macaron",
+                class2: "vanilla macaron",
             },
             {
                 id: "thursday",
                 day: "Thursday",
-                hours: "18:00-19:00",
+                hours: "6pm-7pm",
                 macaron1: "coffee",
                 macImage1: coffee,
                 macaron2: "peanut",
                 macImage2: pistachio,
-                class: "peanut macaron",
+                class1: "macaron",
+                class2: "peanut macaron",
             },
             {
                 id: "friday",
                 day: "Friday",
-                hours: "11:00-12:00",
+                hours: "11am-12pm",
                 macaron1: "raspberry",
                 macImage1: raspberry,
                 macaron2: "lemonbar",
                 macImage2: lemon,
-                class: "lemon macaron"
+                class1: "macaron",
+                class2: "lemon macaron"
             },
             {
                 id: "saturday",
                 day: "Saturday",
-                hours: "18:00-19:00",
+                hours: "6pm-7pm",
                 macaron1: "pink rose",
                 macImage1: rose,
                 macaron2: "teal blue",
                 macImage2: tiffanyblue,
-                class: "tealBlue macaron",
+                class1: "macaron",
+                class2: "tealBlue macaron",
             },
             {
                 id: "sunday",
                 day: "Sunday",
-                hours: "10:00-11:00",
+                hours: "10am-11am",
                 macaron1: "caramel",
                 macImage1: caramel,
                 macaron2: "almond",
                 macImage2: almond,
-                class: "almond macaron",
+                class1: "caramel macaron",
+                class2: "almond macaron",
             },
         ];
 
@@ -100,13 +107,13 @@ class weeklyCalendar extends Component {
                             <p className="day-div">{item.day}</p>
                             <p className="time-div">{item.hours}</p>
                         </div>
-                        <div className="macaron">
+                        <div className={item.class1}>
                             <p>{item.macaron1}</p>
                             <img src={item.macImage1}/>
                         </div>
-                        <div className={item.class}>
+                        <div className={item.class2}>
                             <p>{item.macaron2}</p>
-                            <img className="bottom-macaron-image" src={item.macImage2}/>
+                            <img src={item.macImage2}/>
                         </div>
                     </div>
             )
