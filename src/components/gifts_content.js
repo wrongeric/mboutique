@@ -4,7 +4,7 @@ const GiftsContent = () => {
     return (
         <div className="gift-container">
             <h2>Let's eat macarons!</h2>
-            <p>We make it easy to share la passion du macaron with friends, family, and colleagues.  Choose from our array of premium gift options, or we can create a custom solution.  Contact us when you need help planning your celebration! <span>orders@mboutique.com</span></p>
+            <p>We make it easy to share la passion du macaron with friends, family, and colleagues.  Choose from our array of premium gift options, or we can create a custom solution.  Contact us when you need help planning your celebration! <a href="mailto:orders@mboutique.com">orders@mboutique.com</a></p>
             <h2>Gift Boxes</h2>
             <div className="gifts-background-image">
                 <p>Our signature gift boxes make macarons the perfect gift for any occasion.</p>
