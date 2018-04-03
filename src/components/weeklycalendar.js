@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../assets/css/calendar.css';
 import chocolate from '../assets/images/chocolate.png';
 import coconut from '../assets/images/coconut.png';
@@ -15,123 +15,103 @@ import tiffanyblue from '../assets/images/tiffany-blue.png';
 import almond from '../assets/images/almond.png';
 import caramel from '../assets/images/caramel.png';
 
-const Calendar = () => {
-    return (
-        <div className="schedule">
-            <div className="day">
-                <div>
-                    <p className="day-div">Monday</p>
-                    <p className="time-div">15:00-16:00</p>
-                </div>
-                <div className="macaron">
-                    <p>Chocolate</p>
-                    <img src={chocolate} />
-                </div>
-                <div className="coconut macaron">
-                    <p>Coconut</p>
-                    <img src={coconut} />
-                </div>
-            </div>
+class weeklyCalendar extends Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        const weeklyCalendar = [
+            {
+                id: "monday",
+                day: "Monday",
+                hours: "15:00-16:00",
+                macaron1: "chocoate",
+                macImage1: chocolate,
+                macaron2: "coconut",
+                macImage2: coconut,
+                class: "coconut macaron"
+            },
+            {
+                id: "tuesday",
+                day: "Tuesday",
+                hours: "14:00-15:00",
+                macaron1: "ice cream",
+                macImage1: violetcassis,
+                macaron2: "Tea Latte",
+                macImage2: greentea,
+                class: "macaron"
+            },
+            {
+                id: "wednesday",
+                day: "Wednesday",
+                hours: "15:00-16:00",
+                macaron1: "passion fruit",
+                macImage1: passionfruit,
+                macaron2: "vanilla",
+                macImage2: vanilla,
+                class: "vanilla macaron",
+            },
+            {
+                id: "thursday",
+                day: "Thursday",
+                hours: "18:00-19:00",
+                macaron1: "coffee",
+                macImage1: coffee,
+                macaron2: "pistachio",
+                macImage2: pistachio,
+                class: "macaron",
+            },
+            {
+                id: "friday",
+                day: "Friday",
+                hours: "11:00-12:00",
+                macaron1: "raspberry",
+                macImage1: raspberry,
+                macaron2: "lemonbar",
+                macImage2: lemon,
+                class: "lemon macaron"
+            },
+            {
+                id: "saturday",
+                day: "Saturday",
+                hours: "18:00-19:00",
+                macaron1: "pink rose",
+                macImage1: rose,
+                macaron2: "teal blue",
+                macImage2: tiffanyblue,
+                class: "macaron",
+            },
+            {
+                id: "sunday",
+                day: "Sunday",
+                hours: "10:00-11:00",
+                macaron1: "caramel",
+                macImage1: caramel,
+                macaron2: "almond",
+                macImage2: almond,
+                class: "almond macaron",
+            },
+        ];
 
-            <div className="day">
-                <div>
-                    <p className="day-div">Tuesday</p>
-                    <p className="time-div">14:00-15:00</p>
-                </div>
+        const Calendar = weeklyCalendar.map((item, index) => {
+            return (
+                    <div key={index} className="day">
+                        <div>
+                            <p className="day-div">{item.day}</p>
+                            <p className="time-div">{item.hours}</p>
+                        </div>
+                        <div className="macaron">
+                            <p>{item.macaron1}</p>
+                            <img src={item.macImage1}/>
+                        </div>
+                        <div className={item.class}>
+                            <p>{item.macaron2}</p>
+                            <img src={item.macImage2}/>
+                        </div>
+                    </div>
+            )
+        });
+        return <div className="schedule">{Calendar}</div>;
+    }}
 
-                <div className="macaron">
-                    <p>Ice Cream</p>
-                    <img src={violetcassis} />
-                </div>
-
-                <div className="macaron">
-                    <p>Tea Latte</p>
-                    <img src={greentea} />
-                </div>
-            </div>
-
-            <div className="day">
-                <div>
-                    <p className="day-div">Wednesday</p>
-                    <p className="time-div">09:00-10:00</p>
-                </div>
-
-                <div className="macaron">
-                        <p>Passion</p>
-                        <img src={passionfruit} />
-                </div>
-                <div className="vanilla macaron">
-                    <p>Vanilla</p>
-                    <img src={vanilla} />
-                </div>
-            </div>
-
-            <div className="day">
-                <div>
-                    <p className="day-div">Thursday</p>
-                    <p className="time-div">18:00-19:00</p>
-                </div>
-
-                <div className="macaron">
-                    <p> Coffee </p>
-                    <img src={coffee} />
-                </div>
-                <div className="macaron">
-                    <span>Peanut</span>
-                    <img src={pistachio} />
-                </div>
-            </div>
-
-            <div className="day">
-
-                <div>
-                    <p className="day-div">Friday</p>
-                    <p className="time-div">11:00-12:00</p>
-                </div>
-
-                <div className="macaron">
-                    <p> Raspberry</p>
-                    <img src={raspberry} />
-                </div>
-                <div className="lemon macaron">
-                    <p>Lemonbar</p>
-                    <img src={lemon} />
-                </div>
-            </div>
-
-            <div className="day">
-                <div>
-                    <p className="day-div">Saturday</p>
-                    <p className="time-div">18:00-19:00</p>
-                </div>
-
-                <div className="macaron">
-                    <p>Pink Rose</p>
-                    <img src={rose} />
-                </div>
-                <div className="macaron">
-                    <p>Teal Blue</p>
-                    <img src={tiffanyblue} />
-                </div>
-            </div>
-
-            <div className="day">
-                <div>
-                    <p className="day-div">Sunday</p>
-                    <p className="time-div">10:00-11:00</p>
-                </div>
-
-                <div className="macaron">
-                    <span>Caramel</span>
-                    <img src={caramel} />
-                </div>
-                <div className="almond macaron">
-                    <p>Almond</p>
-                    <img src={almond} />
-                </div>
-            </div>
-        </div>
-
-)};
-
-export default Calendar;
+export default weeklyCalendar;
