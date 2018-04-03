@@ -39,13 +39,13 @@ class weeklyCalendar extends Component {
                 macImage1: violetcassis,
                 macaron2: "Tea Latte",
                 macImage2: greentea,
-                class: "macaron"
+                class: "teaLatte macaron"
             },
             {
                 id: "wednesday",
                 day: "Wednesday",
                 hours: "15:00-16:00",
-                macaron1: "passion fruit",
+                macaron1: "passion",
                 macImage1: passionfruit,
                 macaron2: "vanilla",
                 macImage2: vanilla,
@@ -57,9 +57,9 @@ class weeklyCalendar extends Component {
                 hours: "18:00-19:00",
                 macaron1: "coffee",
                 macImage1: coffee,
-                macaron2: "pistachio",
+                macaron2: "peanut",
                 macImage2: pistachio,
-                class: "macaron",
+                class: "peanut macaron",
             },
             {
                 id: "friday",
@@ -79,7 +79,7 @@ class weeklyCalendar extends Component {
                 macImage1: rose,
                 macaron2: "teal blue",
                 macImage2: tiffanyblue,
-                class: "macaron",
+                class: "tealBlue macaron",
             },
             {
                 id: "sunday",
@@ -106,7 +106,7 @@ class weeklyCalendar extends Component {
                         </div>
                         <div className={item.class}>
                             <p>{item.macaron2}</p>
-                            <img src={item.macImage2}/>
+                            <img className="bottom-macaron-image" src={item.macImage2}/>
                         </div>
                     </div>
             )

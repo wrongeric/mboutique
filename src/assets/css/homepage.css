@@ -111,6 +111,7 @@ li a:hover {
     display: inline-flex;
     background-color: lightgoldenrodyellow;
     flex-direction: column;
+    position: relative;
 }
 
 .day-div, .time-dev{
@@ -145,6 +146,10 @@ li a:hover {
 .align-self{
     align-self: flex-end;
 }
+
+.bottom-macaron-image{
+    margin-right: 5%;
+}
 .macaron {
     padding-top: 8%;
     padding-bottom: 8%;
@@ -156,30 +161,34 @@ li a:hover {
     align-self: flex-end;
 }
 .coconut {
+    position: absolute;
+    bottom: 0;
     background-color: #824603;
     width: 100%;
-    display: flex;
     color: whitesmoke;
 }
 
 .vanilla {
+    position: absolute;
+    bottom: 0;
     background-color: #df5277;
     width: 100%;
-    display: flex;
     color: whitesmoke;
 }
 
 .lemon {
+    position: absolute;
+    bottom: 0;
     background-color: #a2304e;
     width: 100%;
-    display: flex;
     color: whitesmoke;
 }
 
 .almond {
+    position: absolute;
+    bottom: 0;
     background-color: #c39005;
     width: 100%;
-    display: flex;
     color: whitesmoke;
 }
 
