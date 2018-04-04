@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer_email"><img src={mail} />order@mboutique.com</div>
                 <div className="footer_phone_number"> <img src={phone} />949.800-3111</div>
-                <div className="footer_follow_us">Follow us<img src={facebook} class="facebook" /><img src={twitter} class="twitter" /></div>
+                <div className="footer_follow_us">Follow us<img src={facebook} className="facebook" /><img src={twitter} className="twitter" /></div>
             </div>
             <p className="footer_copyright">Copyright @ 2014 MBoutique. All rights reserved.</p>
         </footer>

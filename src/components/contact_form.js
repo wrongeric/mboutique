@@ -33,7 +33,7 @@ class Form extends Component {
     }
 
     render(){
-        const submitted = this.props.submittedSucceeded;
+        const submitSuccess = this.props.submitSucceeded;
         console.log('Props:', this.props);
 
         return (
@@ -57,10 +57,12 @@ class Form extends Component {
                             <label>Message</label>
                             <Field id="message" name="message" type="text" placeholder="Message" onChange={this.handleInputChange} component={this.renderTextArea}  />
                         </div>
-                            <div className='col-xs-3'>
+                        <div>
+                            <div className="success-div" style={{ opacity: submitSuccess ? 1 : 0 }}>
+                                 <i className="fa fa-check-square"></i>
+                            </div>
                             <button type='button' className={'margin-left form-button'} onClick={this.props.handleSubmit(this.sendData)}>Send</button>
                         </div>
-                        {/*<i style={{ opacity: submitted ? 1 : 0 }} className="large material-icons messageSent z-depth-1">playlist_add_check</i>*/}
                     </form>
                 </div>
         )

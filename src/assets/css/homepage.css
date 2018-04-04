@@ -353,8 +353,8 @@ input {
     height: 105px;
     width: 310px;
     background-color: #f5f5f5;
-
 }
+
 .textArea {
     height: 105px;
     width: 310px;
@@ -362,6 +362,27 @@ input {
     border: none;
     margin-bottom: 10px;
     font-size: 1.25em;
+}
+
+.messageSent {
+    float: left;
+    color: white;
+    background-color: rgb(69, 220, 10);
+    border-radius: 2px;
+}
+
+p.error-text{
+    color: red;
+}
+
+.success-div {
+    display: inline-block;
+    float: left;
+}
+
+svg:not(:root).svg-inline--fa{
+    font-size: 4em;
+    color: lawngreen;
 }
 
 .form-button {
@@ -551,13 +572,10 @@ footer {
         font-size: .9em;
     }
 
-    .textArea {
+    .message-div textarea{
         height: 105px;
         width: 265px;
         background-color: #f5f5f5;
-        border: none;
-        margin-bottom: 10px;
-        font-size: 1.1em;
     }
 
     .visitUsInfo {
@@ -719,13 +737,10 @@ footer {
         font-size: .75em;
     }
 
-    .textArea {
+    .message-div textarea{
         height: 105px;
         width: 220px;
         background-color: #f5f5f5;
-        border: none;
-        margin-bottom: 10px;
-        font-size: .9em;
     }
 
     .visitUsInfo {
@@ -904,6 +919,8 @@ footer {
 
     .contactInfo {
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .contactInfoContainer {
@@ -936,18 +953,12 @@ footer {
         font-size: .9em;
     }
 
-    .textArea {
+    .message-div textarea{
         height: 105px;
-        width: 90%;
+        width: 240px;
         background-color: #f5f5f5;
-        border: none;
-        margin-bottom: 10px;
-        font-size: .9em;
     }
 
-    .error-text {
-        color: red;
-    }
 
     .visitUsInfo {
         font-size: 1em;

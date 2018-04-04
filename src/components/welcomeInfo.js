@@ -17,11 +17,11 @@ const Home = () => {
                 <p>Renowned macarons, French delights of the moment can be met in a variety of flavors and colors
                     and are brilliant precisely because of their simplicity - a crispy coating, but delicate in a loose
                     blanket jam, chocolate butter cream is spread inviting.
-
-                    <p>Macarons combines perfectly with champaigne or white wine, tea or hot chocolate, fresh juices and natural
-                    fruit flavored coffee and guarantee that these little delights soon become friend that you can
-                        not break.</p>
                 </p>
+                <p>Macarons combines perfectly with champaigne or white wine, tea or hot chocolate, fresh juices and natural
+                fruit flavored coffee and guarantee that these little delights soon become friend that you can
+                    not break.</p>
+
                 <h2>Find that flavor you like. Try a sample every day!</h2>
             </div>
         </div>
