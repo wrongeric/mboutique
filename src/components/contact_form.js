@@ -17,7 +17,7 @@ class Form extends Component {
             <div className="form-group">
                 <label>{props.label}</label>
                 <input {...props.input} type={props.type ? props.type: 'text'} className="form-control" />
-                <p>{props.meta.touched && props.meta.error}</p>
+                <p className="error-text">{props.meta.touched && props.meta.error}</p>
             </div>
         )
     }
@@ -79,7 +79,7 @@ function validate(values) {
     if (!values.phone) {
         error.phone = 'Please enter a phone number'
     } else if (!/\d{3}-\d{3}-\d{4}/.test(values.phone)) {
-        error.phone = 'Please enter phone number with format 626-826-4021'
+        error.phone = 'Please Enter Valid # XXX-XXX-XXXX'
     }
 
     return error;
