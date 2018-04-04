@@ -22,6 +22,16 @@ class Form extends Component {
         )
     }
 
+    renderTextArea(props){
+        return (
+            <div className="form-group">
+                <label>{props.label}</label>
+                <textarea {...props.input} type={props.type ? props.type: 'text'} className="form-control" />
+                <p className="error-text">{props.meta.touched && props.meta.error}</p>
+            </div>
+        )
+    }
+
     render(){
         const submitted = this.props.submittedSucceeded;
         console.log('Props:', this.props);
@@ -45,7 +55,7 @@ class Form extends Component {
                         </div>
                         <div className="message-div">
                             <label>Message</label>
-                            <Field id="message" name="message" type="text" placeholder="Message" onChange={this.handleInputChange} component={this.renderInput}  />
+                            <Field id="message" name="message" type="text" placeholder="Message" onChange={this.handleInputChange} component={this.renderTextArea}  />
                         </div>
                             <div className='col-xs-3'>
                             <button type='button' className={'margin-left form-button'} onClick={this.props.handleSubmit(this.sendData)}>Send</button>
