@@ -416,6 +416,12 @@ footer {
     font-size: 1.4em;
 }
 
+.footer_email img, .footer_phone_number img {
+    padding-right: 1%;
+}
+
+
+
 .footer_follow_us img {
     padding-left: 15px;
     padding-right: 15px;
@@ -443,6 +449,18 @@ footer {
 
     .time-div {
         font-size: 14px;
+    }
+
+    .schedule {
+        flex-wrap: wrap;
+    }
+
+    .day {
+        width: 30%;
+    }
+
+    .almond {
+        position: relative;
     }
 
     .macaron {
@@ -506,8 +524,20 @@ footer {
         height: 275px;
     }
 
+    /*.day {*/
+        /*width: 13%;*/
+    /*}*/
+
+    .schedule {
+        flex-wrap: wrap;
+    }
+
     .day {
-        width: 13%;
+        width: 30%;
+    }
+
+    .almond {
+        position: relative;
     }
 
     .day-div {
@@ -819,8 +849,13 @@ footer {
     }
 
     .day {
-        width: 50%;
+        width: 70%;
         margin-bottom: 5%;
+        padding-top: 3%;
+    }
+
+    .day-div {
+        padding-bottom: 5%;
     }
 
     .almond, .vanilla, .coconut, .lemon {
@@ -881,6 +916,11 @@ footer {
         padding: 5% 0 20% 0;
         font-size: .85em;
         width: 75%;
+        margin-bottom: 10%;
+    }
+
+    .gift-box li {
+        font-size: 1.1em;
     }
 
     .gift-container h2 {
@@ -888,7 +928,7 @@ footer {
     }
 
     .gift-container p {
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 
     .five-tiered {
@@ -972,11 +1012,20 @@ footer {
     }
 
     .footer_email, .footer_phone_number {
-        width: 45%;
+        width: 100%;
         font-size: .8em;
         padding-top: 1%;
-        padding-bottom: .5%
+        padding-bottom: .5%;
+        text-align: center;
     }
+
+    /*.footer_email, .footer_phone_number {*/
+        /**/
+        /*margin-right: 0;*/
+        /*margin-left: 0;*/
+        /*text-align: center;*/
+
+    /*}*/
 
     .footer_follow_us {
         font-size: .8em;

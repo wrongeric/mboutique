@@ -27,7 +27,7 @@ class ContactInfo extends Component {
                         <div>San Francisco, CA 94115</div>
                         <div>949 800-3111</div>
                         <div className="order-div">
-                            <a className="orderLink">order@mboutique.com</a>
+                            <a href="mailto:orders@mboutique.com" className="orderLink">order@mboutique.com</a>
                         </div>
                     </div>
                     <div className="send-questions">
