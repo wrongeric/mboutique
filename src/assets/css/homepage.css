@@ -37,7 +37,7 @@ body {
     margin: 0;
 }
 .nav-item {
-    padding: 22px;
+    padding: 22px 15px;
     display: inline-block;
 }
 
@@ -349,6 +349,11 @@ input {
     margin-bottom: 2%;
     font-size: 1em;
 }
+.message-div textarea{
+    height: 105px;
+    width: 310px;
+    background-color: #f5f5f5;
+}
 
 .textArea {
     height: 105px;
@@ -357,6 +362,36 @@ input {
     border: none;
     margin-bottom: 10px;
     font-size: 1.25em;
+}
+
+.messageSent {
+    float: left;
+    color: white;
+    background-color: rgb(69, 220, 10);
+    border-radius: 2px;
+}
+
+p.error-text{
+    color: red;
+}
+
+.success-div {
+    display: inline-block;
+    float: left;
+}
+
+svg:not(:root).svg-inline--fa{
+    font-size: 4em;
+    color: lawngreen;
+}
+
+.form-button {
+    width: 40%;
+    height: 30%;
+    font-size: 2em;
+    background-color: #f5f5f5;
+    float: right;
+    margin-top: 5%;
 }
 
 footer {
@@ -380,6 +415,12 @@ footer {
     color: white;
     font-size: 1.4em;
 }
+
+.footer_email img, .footer_phone_number img {
+    padding-right: 1%;
+}
+
+
 
 .footer_follow_us img {
     padding-left: 15px;
@@ -408,6 +449,18 @@ footer {
 
     .time-div {
         font-size: 14px;
+    }
+
+    .schedule {
+        flex-wrap: wrap;
+    }
+
+    .day {
+        width: 30%;
+    }
+
+    .almond {
+        position: relative;
     }
 
     .macaron {
@@ -471,8 +524,20 @@ footer {
         height: 275px;
     }
 
+    /*.day {*/
+        /*width: 13%;*/
+    /*}*/
+
+    .schedule {
+        flex-wrap: wrap;
+    }
+
     .day {
-        width: 13%;
+        width: 30%;
+    }
+
+    .almond {
+        position: relative;
     }
 
     .day-div {
@@ -529,7 +594,7 @@ footer {
     }
 
     input {
-        height: 35px;
+        height: 65px;
         width: 265px;
         background-color: #f5f5f5;
         border: none;
@@ -537,13 +602,10 @@ footer {
         font-size: .9em;
     }
 
-    .textArea {
+    .message-div textarea{
         height: 105px;
         width: 265px;
         background-color: #f5f5f5;
-        border: none;
-        margin-bottom: 10px;
-        font-size: 1.1em;
     }
 
     .visitUsInfo {
@@ -705,13 +767,10 @@ footer {
         font-size: .75em;
     }
 
-    .textArea {
+    .message-div textarea{
         height: 105px;
         width: 220px;
         background-color: #f5f5f5;
-        border: none;
-        margin-bottom: 10px;
-        font-size: .9em;
     }
 
     .visitUsInfo {
@@ -790,8 +849,13 @@ footer {
     }
 
     .day {
-        width: 50%;
+        width: 70%;
         margin-bottom: 5%;
+        padding-top: 3%;
+    }
+
+    .day-div {
+        padding-bottom: 5%;
     }
 
     .almond, .vanilla, .coconut, .lemon {
@@ -852,6 +916,11 @@ footer {
         padding: 5% 0 20% 0;
         font-size: .85em;
         width: 75%;
+        margin-bottom: 10%;
+    }
+
+    .gift-box li {
+        font-size: 1.1em;
     }
 
     .gift-container h2 {
@@ -859,7 +928,7 @@ footer {
     }
 
     .gift-container p {
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 
     .five-tiered {
@@ -890,6 +959,8 @@ footer {
 
     .contactInfo {
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .contactInfoContainer {
@@ -915,39 +986,46 @@ footer {
 
     input {
         height: 35px;
-        width: 90%;
+        width: 240px;
         background-color: #f5f5f5;
         border: none;
         margin-bottom: 5%;
-        font-size: .75em;
-    }
-
-    .textArea {
-        height: 105px;
-        width: 90%;
-        background-color: #f5f5f5;
-        border: none;
-        margin-bottom: 10px;
         font-size: .9em;
     }
+
+    .message-div textarea{
+        height: 105px;
+        width: 240px;
+        background-color: #f5f5f5;
+    }
+
 
     .visitUsInfo {
         font-size: 1em;
     }
 
     .form-button {
-        width: 25%;
+        width: 40%;
         height: 30%;
         font-size: 2em;
         background-color: #fffabe;
     }
 
     .footer_email, .footer_phone_number {
-        width: 45%;
+        width: 100%;
         font-size: .8em;
         padding-top: 1%;
-        padding-bottom: .5%
+        padding-bottom: .5%;
+        text-align: center;
     }
+
+    /*.footer_email, .footer_phone_number {*/
+        /**/
+        /*margin-right: 0;*/
+        /*margin-left: 0;*/
+        /*text-align: center;*/
+
+    /*}*/
 
     .footer_follow_us {
         font-size: .8em;
@@ -961,7 +1039,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 200px) and (max-width: 344px) {
+@media screen and (max-width: 344px) {
     .welcomeContainer{
         width: 100%;
         max-width: 1000px;
