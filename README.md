@@ -1,9 +1,8 @@
 # React MBoutique
 
-> This repo contains the base code and setup to build the MBoutique website with React
+This repo contains the base code of a demo website for a mock macaron bakery storefront made in React.  
 
-### Part 1
-> All setup and other instructions for part one can be found at: <a href="http://reactprototypes.com/projects/mboutique-home" target="_blank" >http://reactprototypes.com/projects/mboutique-home</a>
-
-### Part 2
-> Instructions coming soon!
+## Feature List
+- Dynamically created and customizable weekly calendar. 
+- Fully Mobile Responsive for All Devices  
+- React Router to route users to various pages
